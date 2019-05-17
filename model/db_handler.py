@@ -25,8 +25,9 @@ def load_data(path):
     DB = sqlite3.connect(FNAME)
 
     try:
-
         cursor = DB.cursor()
+        cursor.execute("""CREATE TABLE moz_bookmarks(title TEXT,id INTEGER PRIMARY KEY,parent TEXT,fk TEXT)""")
+        cursor.execute("""CREATE TABLE moz_places(id INTEGER PRIMARY KEY,url TEXT)""")
         cursor.execute(
             """
     SELECT DISTINCT
