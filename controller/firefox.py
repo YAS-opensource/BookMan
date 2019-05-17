@@ -3,6 +3,20 @@ from sys import platform
 
 
 def __find_possible_paths__(root_path):
+    """
+    Find all possible paths for places.sqlite in the given root_path directory
+
+    parameters
+    ----------
+    root_path: string
+        a root directory to search for places.sql
+
+    returns
+    -------
+    list
+        a list of discovered paths for places.sqlite
+    """
+
     possible_paths = [os.path.join(root_path, x) for x in os.listdir(
         root_path)]
     possible_paths = [x for x in possible_paths if os.path.isdir(x)]
