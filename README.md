@@ -9,9 +9,13 @@
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/Naereen/)
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
 
-Simple Bookmark Manager written in python
+---
 
-## To run
+## Simple Bookmark Manager written in python
+
+A CLI tool to access chrome and firefox bookmarks from the terminal
+
+### To run
 
 ```bash
 python3 main.py
