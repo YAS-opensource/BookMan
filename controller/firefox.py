@@ -30,7 +30,6 @@ def get_path():
     """  returns the location of firefox's local sqlite database """
 
     if platform == "linux" or platform == "linux2":
-        # TODO implement for LINUX platform, just assign the root_path variable
         root_path = os.path.expanduser("~")
         root_path = os.path.join(root_path, ".mozilla",
                                  "firefox")
