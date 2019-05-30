@@ -42,5 +42,8 @@ def load_data(path):
         )
         return cursor
     except sqlite3.OperationalError as e:
-        print(e)
+        if "locked" in str(e):
+            print("Please shut down Firefox/Chrome before running this application")
+        else:
+            print(e)
         exit()
